@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {JsonService} from '../services/json.service';
-
+// Comment, last commit before refactoring app into html files.
 @Component({
     selector: 'user',
     template: `
