@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {JsonService} from '../services/json.service';
 // Comment, last commit before refactoring app into html files.
 @Component({
+    moduleId: module.id, //For using relative paths
     selector: 'user',
     template: `
     <h1>Hello {{name}}</h1>
@@ -40,6 +41,7 @@ import {JsonService} from '../services/json.service';
         <h3>{{json.title}}</h3>
         <p>{{json.body}}</p>
     `,
+    templateUrl: 'user.component.html',
     providers: [JsonService]
     // styles: ['div {width: 400px;  margin: 0px auto;}']
 })
