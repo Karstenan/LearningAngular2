@@ -10,8 +10,8 @@ import { routing } from './app.routing';
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, HttpModule, routing ],
-  declarations: [ AppComponent, UserComponent, AboutComponent ],
-  bootstrap:    [ AppComponent ]
+  imports:      [ BrowserModule, FormsModule, HttpModule, routing ], // importys from angular
+  declarations: [ AppComponent, UserComponent, AboutComponent ], // my own classes
+  bootstrap:    [ AppComponent ] // not sure yet, but can be used to make it prettier
 })
 export class AppModule { }
